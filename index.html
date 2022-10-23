@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Diwali Diya's</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .card{
+            width: 300px;
+            height: 360px;
+            border: 5px rgb(250, 54, 149) dotted;
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color:rgb(138, 138, 252);
+        }
+        .light-img{
+            display: block;
+            margin: auto;
+            height: 180px;
+            padding: 30px;;
+        }
+
+        .btn-container{
+            display: flex;
+            justify-content: space-between;
+            padding:5px;
+            margin-top:30px;
+            height: 30px;
+        }
+        .btn{
+            border: none;
+            border-radius: 20px;
+            border: 0.5px dashed black;
+            cursor: pointer;
+            font-size: 20px;
+            margin: auto;        
+        }
+        .btn-on{
+            background-color: #009933;
+            color:white;
+        }
+        .btn-off{
+            background-color: #ff3333;
+            color:white;
+        }
+        .card-dark{
+            background-color: grey;
+        }
+        .card-light{
+            background-color: rgb(255, 131, 97);
+        }
+    </style>
+    <script>
+        function lightOn(){
+            document.getElementById("light").src = "./images/light-on.png";
+            document.getElementById("btn-on").className = "btn btn-on";
+            document.getElementById("btn-off").className = "btn btn-off";
+            document.querySelector(".card").className ="card card-light";
+        }
+        function lightOff(){
+            document.getElementById("light").src = "./images/light-off.png";
+            document.getElementById("btn-off").className = "btn btn-off";
+            document.getElementById("btn-on").className = "btn btn-on";
+            document.querySelector(".card").className = "card card-dark";
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div class="card">
+        <h4 style="margin-left:160px ;font-size:10px;">Created by :Jagruti Mahajan</h4>
+        <img src="./images/light-off.png" class="light-img" id="light"/>
+        <div class="btn-container">
+            <button class="btn btn-on" id="btn-on"onclick="lightOn()">ON</button>
+            <button class="btn btn-off" id="btn-off" onclick="lightOff()">OFF</button>
+        </div>
+    </div>
+    <div class="h1">
+        <h1 style="margin-left:300px; background-color: aqua;display: inline;border-radius: 4px;
+    border:4px dotted rgb(253, 60, 140);font-family:cursive;">
+            <span class="happy">Happy</span> Diwali from Your Lovely Friend🪔🎆🎇🧨🏮💣</h1>
+            <h1></h1>
+    </div>
+    
+    <div class="iframe">
+    <iframe width="560" height="315" src="./Happy Diwali 2022.mp4" 
+        title="Diwali video player" frameborder="200px" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h4 style="color:black;font-size:18px;margin-left:600px">Created by : Jagruti Mahajan</h4>
+    
+</body>
+</html>
